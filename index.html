@@ -69,14 +69,16 @@
           </ul>
 
           <form class="card p-2">
+            <label for="promoCode">Promotional Code</label>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Promo code" alter="Aplicar codigo de descuento ">
+              
+              <input type="text" class="form-control" Name="promoCode" alter="Aplicar codigo de descuento ">
               <button type="submit" class="btn btn-secondary">Redeem</button>
             </div>
           </form>
         </div>
         <div class="col-md-7 col-lg-8">
-          <h4 class="mb-3">Billing address</h4>
+          <h1 class="mb-3">Billing address</h1>
           <form class="needs-validation" novalidate>
             <div class="row g-3">
               <div class="col-sm-6">
@@ -173,8 +175,8 @@
 
             <hr class="my-4">
 
-            <h4 class="mb-3">Payment</h4>
-
+            <fieldset>
+              <legend>Paid method</legend>
             <div class="my-3">
               <div class="form-check">
                 <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
@@ -188,7 +190,7 @@
                 <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
                 <label class="form-check-label" for="paypal">PayPal</label>
               </div>
-            </div>
+            </fieldset>
 
             <div class="row gy-3">
               <div class="col-md-6">
